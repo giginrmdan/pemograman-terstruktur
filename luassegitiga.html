@@ -1,0 +1,16 @@
+<form action="" method="post" onsubmit="return false">
+  Masukan alas segitiga <input type="number" name="" id="alas">
+  Masukan tinggi segitiga <input type="number" name="" id="tinggi">
+  <button onclick="hitung()">HitungLuas</button>
+  </from>
+  <p id="hasil"></p>
+  <script>
+    function hitung() {
+      let alas = document.getElementById('alas').
+        value
+      let tinggi = document.getElementById('tinggi').
+        value
+      let luas = 0.5 * alas * tinggi
+      document.getElementById('hasil').innerHTML = luas
+    }
+  </script>

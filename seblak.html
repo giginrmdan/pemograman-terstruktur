@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Percabangan</title>
+</head>
+<body>
+  <form action="" method="post" onsubmit="return false">
+    Masukan x <input type="text" id="x"><br>
+    Masukan y <input type="number" onchange="hasil()" id="y"><br>
+  
+  </form>
+  <p id="p"></p>
+  <p id="Q"></p>
+    <script>
+      function hasil () {
+        let x =parseInt(document.getElementById('x').value)
+        let y =parseInt(document.getElementById('y').value)
+        let p = x + y
+        document.getElementById('p').innerHTML = p
+        if (p > 0) {
+            q = x * y
+        } else Q = x / y
+        document.getElementById('Q').innerHTML = Q
+      }
+    </script>
+  
+</body>
+</html>
